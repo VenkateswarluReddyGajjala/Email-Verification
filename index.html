@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+     <div class="project">
+     <div class="main">
+        <div class="chaild">
+            <!-- <img src="https://cdn.pixabay.com/photo/2023/06/27/10/51/pier-8091934_640.jpg" alt=""  > -->
+        </div>
+        <div class="chaild1">
+            <form action="">
+                <label for="">Full Name</label>
+                <input type="text" name="fname" id="fname"><br><br>
+                <label for="">Phone Number</label>
+                <input type="tel" name="phone" id="phone"><br><br>
+                <label for="">Username</label>
+                <input type="text" name="uname" id="uname"><br><br>
+                <label for="">Email Address</label>
+                <div>
+                <input type="text" name="email" id="email">
+                <button id="btn">Verify</button>
+            </div><br><br>
+            <div class="validation">
+            <p id="provideemail">please provide email..</p>
+                <p class="emailverified">email successfuly verified</p>
+            </div>
+                <label for="">Password</label>
+                <input type="password" name="password" id="password"><br>
+                <label for="">Confirm Password</label>
+                <input type="password" name="confirm password" id="cpassword"><br><br>
+                <div class="matchbox">
+                <p id="match1">password does not matches</p>
+                <p id="match2">password matches</p>
+            </div>
+                <button id="btn1">submit</button>
+            </form>
+        </div>
+        <div id="otp">
+            <p class="enter">Enter OTP<p>
+            <h2>OTP</h2>
+                     <form action="">
+                     <p id="invalid">invalid otp</p>
+                     <input type="text" name="email" id="checking" ><br><br>
+                     <input  type="submit" value="Verify" name="" id="su1">
+                     <input type="submit" value="Resend OTP" id="su2">
+                    <input type="submit" value="Edit email" id="su3">
+                    </form> 
+        </div>
+     </div>
+    </div>
+     <script async src="./index.js"></script>
+
+     <script async type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "hoAvlkRfT_hDFd8FA",
+      });
+   })();
+</script>
+</body>
+</html>
